@@ -1,5 +1,5 @@
 def display_board(board)
-  puts "#{board[0]} | #{board[1]} | #{board[2]} "
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
   puts " #{board[3]} | #{board[4]} | #{board[5]} "
   puts "-----------"
@@ -13,7 +13,8 @@ def input_to_index(position)
   return index
 end
 
-def move( board, index, token="X" )
-  board[index] << token
+def move( board, input_to_index(position), token = "X" )
+  idx = input_to_index(position)
+  board[idx] << token
   return board
 end
