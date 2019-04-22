@@ -13,8 +13,8 @@ def input_to_index(position)
   return index
 end
 
-def move( board, input_to_index(position), token = "X" )
-  idx = input_to_index(position)
-  board[idx] << token
+def move( board, index, token = "X" )
+
+  board[index] << token
   return board
 end
