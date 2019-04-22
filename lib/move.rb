@@ -14,6 +14,6 @@ def input_to_index(position)
 end
 
 def move( board, index, token="X" )
-  board[index] << token
+  board[index] << token.strip
   return board
 end
